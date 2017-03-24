@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+/* Full-width input fields */
+input [type=text] {
+input [type=password]
+    width:100%;
+    padding:12px 20px;
+    margin:8px 0;
+    display:inline-block;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+}
+
+
+/* Set a style for all button */
+button {
+    background-color:#4CAF50;
+    color:white;
+    padding:14px 20px;
+    margin:8px 0;
+    border:none;
+    cursor:pointer;
+    width:100%;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width:auto;
+    padding:10px 18px;
+    background-color:#f44336;
+}
+
+/* Center the image and position the close button */ 
+.imgcontainer {
+    text-align:center;
+    margin:24px 0 12px 0;
+    position:relative;
+
+}
+
+img.avatar {
+    width:40%;
+    border-radius:50%;
+}
+
+.container {
+    padding:16px;
+}
+
+span.psw {
+    float:right;
+    padding-top:16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display:none; /* Hidden by default */
+    position:fixed; /* Stay in place */
+    z-index:1; /* Sit on top */
+    left:0;
+    top:0;
+    width:100%; /* Full width */
+    height:100%; /* Full height */
+    overflow:auto;  /* Enable scroll if needed */
+    background-color:rgb(0,0,0,);
+/* Fallback color */
+    background-color:rgba(0,0,0,0.4); /*Black w/opacity */
+    padding-top:60px;
+}
+
+
+/* Modal Context/box */
+.modal-content {
+    background-color:#fefefe;
+    margin:5% auto 15% auto; /* 5% from the top,15% from the bottom and centered */
+    border:1px solid #888;
+    width:80%;  /* Could be more or less,depending on screen sixe*/
+}
+
+/* The Close Button */
+.close {
+    position:absolute;
+    right :25px;
+    top:0;
+    color:#000;
+    font-size:35px;
+    font-weight:bold;
+}
+
+.close:hover,
+.close:focus {
+    color:red;
+    cursor:pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation:animatezoom  0.6s;
+    animation:animatezoom 0.6s
+}
+
+
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes animatezoom {
+    from{transform:scale(0)}
+    to{transform:scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width:300px) {
+    span.psw {
+       display:block;
+       float:none;
+    }
+    .cancelbtn{
+       width:100%;
+    }
+}
+</style>
+<body>
+
+<h2>Modal Login Form</h2>
+
+<button
+onclick="document.getElementById('id01').style.display='block'"
+style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action_page.php">
+    <div class="imgcontainer">
+      <span
+onclick="document.getElementById('id01').style.display='none'"
+class="close" title="close modal">&times;</span>
+      <img src ="img_avatar.jpg"
+alt="avatar" class="avatar">
+    </div>
+
+
+    <div class="container">
+      <label><b>Username</b>
+</label>
+
+
+      <input type="text"
+placeholder="Enter Username"
+name="uname" required>
+
+      <label><b>Password</b>
+</label>
+      <input type="password"
+placeholder="Enter Password"
+name="psw" required>
+
+
+      <button
+type="submit">Login</button>
+      <input type="checkbox"
+checked="checked"> Remember me
+</div>
+
+<div class="container"
+style="background-color:#f1f1f1">
+      <button type="button"
+onclick="document.getElementById('id01').style.display='none'"
+class="cancelbtn">Cancel</button>
+ 
+      <span class="psw">Forgot<a href="#">password?</a></span>
+                 </div>
+    </form>
+</div>
+
+<script>
+// Get the modal
+var modal=
+document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal,close it
+window.onclick = function(event) {
+    if (event.target==modal){
+        modal.style.display="none";
+    }
+}
+
+</script>
+
+
+
+
+</body>
+
+<br><a href="http://abdulrasaak.blogspot.in/ "> <h3>HOME</h3></a>
+
+<img src=" img_fjords.jpg"
+alt="tabuk view"
+"width:10px ;hight:10px;">
+
+<img src="J0234687.gif"
+alt="It's my effort"
+style="width:70px; height:70px;">
+
+<img src="J0283209.gif"
+alt="it's my effort"
+style="width:70px; height:70px;">
+
+
+	
+
+<style>
+*{box-sizing:border-box;}
+ul{list-style-type:none;}
+body{font-family:verdana,sans-
+serif;}
+
+.month{
+    padding:70px 25px;
+    width:100%;
+    background:#1abc9c;
+}
+
+.month ul{
+    margin:0;
+    padding:0;
+}
+
+.month ul li{
+    color:white;
+    font-size:20px;
+    text-transform:uppercase;
+    letter spacing:30px;
+}
+
+.month .prev{
+    float:left;
+    padding-top:10px;
+}
+
+.month .next{
+    float:right;
+    padding-top:10px;
+}
+
+.weekdays{
+    padding:10px 10;
+    background-color:#ddd;
+    margin:0;
+}
+
+.weekdays li{
+    display:inline-block;
+    width:13.6%;
+    text-align:center;
+    margin-bottom:5px;
+    font-size:15px;
+    color:#666;
+}
+
+.days{
+    padding:10px 10;
+    background:#eee;
+    margin:0;
+}
+
+.days li{
+    list-style-type:none;
+    display:inline-block;
+    width:13.6%;
+    text-align:center;
+    margin-bottom:5px;
+    font-size:12px;
+    color:#777;
+}
+
+.days li .active{
+    padding:5px;
+    background:#1abc9c;
+    color:white !important
+}
+
+/* Add media queries for smaller
+screens */
+@media screen and (max-width:720px)
+{
+    .weekdays li, .days li {width:
+13.1%;}
+}
+
+@media screen and (max-width:
+420px)  {
+    .weekdays li, .days li {width:
+12.5%;}
+    .days li .active{padding:
+2px;}
+}
+
+@media screen and (max-width:
+290px)  {
+    .weekdays li,.days li{width:
+12.2%;}
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center;">KIZHAKKETHIL CALENDER
+
+
+</H1>
+
+<div class="month">
+  <ul>
+    <li class="prev">?</li>
+    <li class="next">?</li>
+    <li style="text-align:center">
+      august<br>
+      <span style="font-
+size:18px">2016</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>su</li>
+  <li>mo</li>
+  <li>tu</li>
+  <li>we</li>
+  <li>th</li>
+  <li>fr</li>
+  <li>sa</li>
+  
+</ul>
+
+<ul class="days">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span
+class="active">10</span>
+</li>
+  <li>11</li>
+  <li>12  </li>
+  <li>13  </li>
+  <li>14  </li>
+  <li>15  </li>
+  <li>16  </li>
+  <li>17  </li>
+  <li>18  </li>
+  <li>19  </li>
+  <li>20  </li>
+  <li>21  </li>
+  <li>22  </li>
+  <li>23  </li>
+  <li>24  </li>
+  <li>25  </li>
+  <li>26  </li>
+  <li>27  </li>
+  <li>28  </li>
+  <li>29  </li>
+  <li>30  </li> 
+  <li>31</li>
+</ul>
+<a href="">How to create a html calender</a>
+<br>
+<a href="">How to create a modal login form</a>
+<br>
+<a href ="http://abdulrasaak.blogspot.in/">Create a attractive website</a>
+<br>
+
+</html>
+
